@@ -39,3 +39,8 @@ Target:
 Il peut être intéressant de s'inspirer de ce projet:
 https://www.reddit.com/r/leagueoflegends/comments/wjepst/i_did_some_sentiment_analysis_on_the_league_of/
 (Le projet cité a également un site déployé sur herokuapp, à revoir)
+
+
+## Présentation:
+
+[Lien du fichier présentation](https://docs.google.com/presentation/d/1-z-OkW23G-p84qRh2Iz7952kcDjXYnLn/edit?usp=sharing&ouid=108808206071333529517&rtpof=true&sd=true)
