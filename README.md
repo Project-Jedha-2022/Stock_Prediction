@@ -1,18 +1,22 @@
-# Reddit_SentimentAnalysis
+# Stock variation prediction
 
 Faire du Sentiment Analysis NLP sur Reddit pour établir une relation avec la valeur du stock.
 Dans ce cas on va se centrer au tour de l'entreprise Bandai Namco
 
 Features:
+
+Social:
 - Sentiment
-- Variation dans les abonnes, likes, nombre des posts
-- Indicateurs financieres daily
 - Nombre de commentaires positifs
 - Nb de commentaires négatifs
 - Nb de commentaires neutres
 - Nb de followers
 - Nb de followers twitter
 - Nb total de commentaires
+
+Technical:
+- Variation dans les abonnes, likes, nombre des posts
+- Indicateurs financieres daily
 - Données de la compagnie:
 - Chiffre d'affaire
 - Nombre d'employés
@@ -35,4 +39,3 @@ Target:
 Il peut être intéressant de s'inspirer de ce projet:
 https://www.reddit.com/r/leagueoflegends/comments/wjepst/i_did_some_sentiment_analysis_on_the_league_of/
 (Le projet cité a également un site déployé sur herokuapp, à revoir)
-
