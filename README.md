@@ -1,7 +1,7 @@
 # Stock variation prediction
 
-Faire du Sentiment Analysis NLP sur Reddit pour établir une relation avec la valeur du stock.
-Dans ce cas on va se centrer au tour de l'entreprise Bandai Namco
+Utilisation des sources d'information (Financial, Reddit) pour établir une relation avec la valeur du stock.
+Dans ce cas on va se centrer au tour de l'entreprise Ubisoft.
 
 Features:
 
