@@ -142,10 +142,12 @@ with col2:
         
         """)
 
+    sentiment_data = data.loc['title_roberta_neg', 'title_roberta_neu', 'title_roberta_pos']  
+
     col1, col2, col3 = st.columns(3)
-    col1.metric("Positive sentiment")
-    col2.metric("Negative sentiment")
-    col3.metric("Neutral sentiment")
+    col1.metric("Positive sentiment", sentiment_data.iloc[2,2:])
+    col2.metric("Negative sentiment", sentiment_data.iloc[0,0:])
+    col3.metric("Neutral sentiment", sentiment_data.iloc[1,1:])
 
     ### Predict
 
