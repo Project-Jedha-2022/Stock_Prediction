@@ -120,6 +120,31 @@ with col2:
     st.plotly_chart(fig, use_container_width=True)
 
 
+### Predict
+
+st.header("Prediction", "predict")
+    st.markdown("""
+
+        Prediction de la valeur du stock en fonction de la date. 
+
+    """)
+
+date_pred = datetime.date.today()
+st.write("Predicted value : ", predict(date_pred))
+
+# à implementer
+def predict(future_date):
+    """
+    Sum up two integers
+    Arguments:
+        future_date: date
+    Returns:
+        The predicted value of the stock for the given date
+    """
+    value_pred = 0
+    return value_pred
+
+
 ### Side bar 
 
 st.sidebar.header("Sections")
@@ -127,7 +152,7 @@ st.sidebar.markdown("""
     * [Main](#main)
     * [Load and showcase data](#load-and-showcase-data)
     * [EDA](#eda)
-    * [Predict](#load-and-showcase-data)
+    * [Predict](#predict)
 """)
 e = st.sidebar.empty()
 e.write("")
@@ -147,15 +172,3 @@ with footer:
         If you want to learn more, check out [streamlit's documentation](https://docs.streamlit.io/) 📖
     """)
 
-# Python
-import pandas as pd
-from prophet import Prophet
-# Python
-df = pd.read_csv('https://raw.githubusercontent.com/facebook/prophet/main/examples/example_wp_log_peyton_manning.csv')
-st.write(df.head())
-# Python
-m = Prophet()
-m.fit(df)
-# Python
-future = m.make_future_dataframe(periods=365)
-st.write(future.tail())
