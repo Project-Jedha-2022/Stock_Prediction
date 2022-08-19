@@ -30,13 +30,27 @@ st.markdown("---")
 
 
 
-### Load data
+### Util functions
 
+# Load data
 @st.cache
 def load_data():
     data = pd.read_csv(DATA_URL)
     data['date'] = pd.to_datetime(data["date"], format="%Y-%m-%d")
     return data
+
+# Predict stock value
+# à implementer
+def predict(future_date):
+    """
+    Sum up two integers
+    Arguments:
+        future_date: date
+    Returns:
+        The predicted value of the stock for the given date
+    """
+    value_pred = 0
+    return value_pred
 
 
 
@@ -120,29 +134,17 @@ with col2:
     st.plotly_chart(fig, use_container_width=True)
 
 
-### Predict
+    ### Predict
 
-st.header("Prediction", "predict")
+    st.header("Prediction", "predict")
     st.markdown("""
 
         Prediction de la valeur du stock en fonction de la date. 
 
     """)
 
-date_pred = datetime.date.today()
-st.write("Predicted value : ", predict(date_pred))
-
-# à implementer
-def predict(future_date):
-    """
-    Sum up two integers
-    Arguments:
-        future_date: date
-    Returns:
-        The predicted value of the stock for the given date
-    """
-    value_pred = 0
-    return value_pred
+    date_pred = datetime.date.today()
+    st.write("Predicted value : ", predict(date_pred))
 
 
 ### Side bar 
