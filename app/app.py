@@ -143,9 +143,9 @@ with col2:
         """)
 
     col1, col2, col3 = st.columns(3)
-    col1.metric()
-    col2.metric()
-    col3.metric()
+    col1.metric("Positive sentiment")
+    col2.metric("Negative sentiment")
+    col3.metric("Neutral sentiment")
 
     ### Predict
 
