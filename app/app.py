@@ -133,6 +133,19 @@ with col2:
     fig.update_layout(width=int(1000),height=int(1000))
     st.plotly_chart(fig, use_container_width=True)
 
+    # Sentiment analysis
+
+    st.header("Sentiment analysis", "sentiment_analysis")
+    st.markdown("""
+        
+        Moyenne des sentiments de la communauté en fonction de la date
+        
+        """)
+
+    col1, col2, col3 = st.columns(3)
+    col1.metric()
+    col2.metric()
+    col3.metric()
 
     ### Predict
 
@@ -154,6 +167,7 @@ st.sidebar.markdown("""
     * [Main](#main)
     * [Load and showcase data](#load-and-showcase-data)
     * [EDA](#eda)
+    * [Sentiment analysis](#sentiment_analysis)
     * [Predict](#predict)
 """)
 e = st.sidebar.empty()
