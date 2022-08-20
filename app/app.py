@@ -141,10 +141,10 @@ with col2:
         Moyenne des sentiments de la communauté en fonction de la date
         
         """)
-
-    st.metric("Positive sentiment", data.iloc[0,-1])
-    st.metric("Negative sentiment", data.iloc[0,-3])
-    st.metric("Neutral sentiment", data.iloc[0,-2])
+    
+    st.metric("Positive sentiment", round(data.iloc[0,-1].item(), 2))
+    st.metric("Negative sentiment", round(data.iloc[0,-3].item(), 2))
+    st.metric("Neutral sentiment", round(data.iloc[0,-2].item(), 2))
 
     ### Predict
 
