@@ -142,9 +142,9 @@ with col2:
         
         """)
     
-    st.metric("Positive sentiment", round(data.iloc[0,-1].item(), 2))
-    st.metric("Negative sentiment", round(data.iloc[0,-3].item(), 2))
-    st.metric("Neutral sentiment", round(data.iloc[0,-2].item(), 2))
+    data_roberta = data[['title_roberta_neg', 'title_roberta_neu', 'title_roberta_pos']]
+    fig = px.area(data_roberta)
+    st.plotly_chart(fig, use_container_width=True)
 
     ### Predict
 
