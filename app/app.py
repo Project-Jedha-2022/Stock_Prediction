@@ -142,7 +142,7 @@ with col2:
         
         """)
 
-    sentiment_data = data.loc['title_roberta_neg', 'title_roberta_neu', 'title_roberta_pos']  
+    sentiment_data = data[['title_roberta_neg', 'title_roberta_neu', 'title_roberta_pos']]
 
     col1, col2, col3 = st.columns(3)
     col1.metric("Positive sentiment", sentiment_data.iloc[:,2:2])
