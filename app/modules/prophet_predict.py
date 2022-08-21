@@ -24,6 +24,6 @@ class my_prophet:
 if __name__ == "__main__":
     prediction_period_length = 100
     prophet_model = my_prophet(prediction_period_length)
-    the_date = '2022-11-13'
+    the_date = '2022-10-01'
     stock_price = prophet_model.prophet_predict(the_date)
     print("value predicted for {} = {}".format(the_date, stock_price))
